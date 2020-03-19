@@ -247,12 +247,12 @@ public class MqttPayloadUtil {
 	}
 //				static	String url = "http://192.168.1.201:8086/mqttPublishServer/mqtt/sendV1.1";
 //	static	String url = "http://run.buybal.com:88/mqttPublishServer/mqtt/sendV1.1";
+	static	String url = "http://run.buybal.com:88/mqttPublishServer/mqtt/sendV1.2";
 //	static	String url = "http://localhost:8080/mqtt/send";
 //	static	String url = "http://47.95.72.154:8080/mqttPublishServer/mqtt/send";
-	static	String url = "http://run.buybal.com/mqttPublishServer/mqtt/send";
+//	static	String url = "http://run.buybal.com/mqttPublishServer/mqtt/send";
 //	static	String url = "http://all.buybal.com/mqttPublishServer/mqtt/send";
-//	static	String url = "http://192.168.1.205:2180/mqttPublishServer/mqtt/sendV1.2";
-//	static	String url = "http://run.buybal.com/mqttPublishServer/mqtt/sendV1.2";
+//	static	String url = "http://all.buybal.com/mqttPublishServer/mqtt/sendV1.1";
 //	static	String url = "http://all.buybal.com/mqttPublishServer/mqtt/sendV1.2";
 //		String url = "http://localhost:9091/mqtt/sendV1.1";
 	public static void sendMqtt(String topic,String payload) throws Exception{
@@ -286,25 +286,9 @@ public class MqttPayloadUtil {
 
 
 	public static void main(String[] args) throws Exception {
-		sendMqtt("VB7300000135","VB7300000135|1007|2019030210214000574646|1.00|2001");
-		sendMqtt("VB7300000135","VB7300000135|1007|2019030210214000574646|1.00|2002");
-		sendMqtt("VB7300000135","VB7300000135|1007|2019030210214000574646|1.00|2003");
-		sendMqtt("VB7300000135","VB7300000135|1007|2019030210214000574646|1.00|2004");
-//		System.out.println(Charset.defaultCharset());
-//			sendMqtt(,"352736082430359|1007|2018121318060337212345|"+i+"|2001");
-/*		for (int i = 0; i < 3600/5/2; i++) {
-			sendMqtt("352019040227799","352019040227799|1007|2019030210214000574646|"+i+"|2001");
-			Thread.sleep(5000);
-		}*/
-//		sendMqtt("352736082469043","352019040227799|1007|2019030210214000574646|132|2001");
-//		sendMqtt("869632030191076",new Date());
-//		sendMqtt("869632030183925",new Date());
-//		sendMqtt("352736082610463",new Date());
+		sendMqtt("QR931000000266","QR931000000266|1007|2019030210214000574646|3.0|2001");
+//		sendMqtt("352736082218614",new Date());
 //		sendMqtt(MD5Encryptor.MD5Encode("352736082469043"),"352736082469043|1007|2018121318060337212345|888.00|2001");
-//		sendMqtt(MD5Encryptor.MD5Encode("352736082427124"),"352736082427124|1007|2018121318060337212345|888.00|2001");
-//		sendMqtt(MD5Encryptor.MD5Encode("352736082222277"),"352736082222277|1007|2018121318060337212345|888.00|2001");
-//		sendMqtt(MD5Encryptor.MD5Encode("352736082430359"),"352736082430359|1007|20190116154755282352736082137871KqYou|1.00|2001");
-//		System.out.println(MD5Encryptor.MD5Encode("352736082427124"));
 
 	}
 
